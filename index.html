@@ -62,15 +62,18 @@ console.log(`Привет, ${user.name}`);<br/>
 </section>
 <section class="block">
 <h3>Кого или что будем искать?</h3>
-<div>
-  <select class="input">
+ <form id="form" action="#">
+
+  <select name="options" class="input options">
     <option value="people">People</option>
     <option value="planets">Planets</option>
     <option value="films">Films</option>
   </select>
   <input class="input" value="" type="number" name="number" min="1" max="10"/>
   <button class="btn input">Искать</button>
-</div>
+
+</form>
+<div class="result"></div>
 </section>
   </div>
   <script src="index.js"></script>
