@@ -10,7 +10,56 @@
 </head>
 <body>
   <div class="root">
-<section></section>
+<section>
+   <h1>Приветствую</h1>
+  <h2>Ответы на вопросы</h2>
+  <ol>
+    <li>Какие 2 обязательных шага нужно сделать до начала обращения к методам модулей?
+      <p><i>Ответ:</i><br/>
+      <ul>
+        <li>npm init --yes;</li>
+        <li>npm install <i>jquery </i>(имя библиотеки);</li>
+      </ul></p>
+    </li>
+    <li>Как узнать, установлен ли у тебя менеджер пакетов npm?
+      <p><i>Ответ:</i><br/> Для этого вводим в терминале команду <i>npm -v</i>.
+      </p>
+    </li>
+    <li>Зачем нужен блок finally?
+      <p><i>Ответ:</i><br/> Секцию <i>finally</i> часто используют для завершения кода вне зависимости от того, будет ошибка или нет.
+      </p>
+    </li>
+    <li>Есть следующий код:<br/>
+      let user = undefined;<br/>
+console.log(`Привет, ${user.name}`);<br/>
+Как сделать так, чтобы при обращении к нему выводилось внятное сообщение об ошибке «Имя пользователя не заполнено»?<br/>
+      <p><i>Ответ:</i><br/>
+        let user = undefined;<br/>
+        try {console.log(`Привет, ${user.name}`);}<br/>
+        catch (error) { console.log ("Имя пользователя не заполнено")};
+      </p>
+    </li>
+    <li>Как сгенерировать собственную ошибку, например, в случае некорректного формата данных?
+      <p><i>Ответ:</i><br/> throw new Error (”error message”)
+      </p>
+    </li>
+    <li>Какую команду надо ввести, чтобы сгенерировался файл package.json?
+      <p><i>Ответ:</i><br/> npm init
+      </p>
+    </li>
+    <li>Приведите пример захвата ошибки в случае некорректного преобразования данных:<br/>
+      console.log(parseInt('ыыыы'));<br/>
+      <p><i>Ответ:</i><br/> 
+        try {<br/> let json = ыыыы;<br/> let parseInt = JSON.parse(json); }<br/>
+        catch (error) { console.log(error.message); }<br/>
+      </p>
+    </li>
+    <li>Изучите документацию к библиотеке moment <i>https://momentjs.com/</i> и скажите, как вывести название дня недели по дате?
+      <p><i>Ответ:</i><br/> moment().format('dddd'); 
+      </p>
+    </li>
+  </ol>
+</section>
 <section></section>
   </div>
   <script src="index.js"></script>
