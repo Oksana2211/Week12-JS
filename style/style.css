@@ -3,3 +3,25 @@
   padding-right: 25%;
 font-size: 1.7rem;
 }
+.block {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding-bottom: 5%;
+  text-align: center;
+  background-color: rgb(255, 243, 246);
+  border: 1px solid rgb(247, 168, 185);
+  border-radius: 20px;
+}
+.input {
+  height: 3vw;
+  width: 7vw;
+  background: none;
+  border: 2px solid rgb(247, 168, 185);
+}
+.btn {
+  color: rgb(245, 139, 162);
+  cursor: pointer;
+}
+.btn:hover {
+  background: rgb(250, 219, 226);
+}
