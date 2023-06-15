@@ -25,3 +25,9 @@ font-size: 1.7rem;
 .btn:hover {
   background: rgb(250, 219, 226);
 }
+.result {
+  padding-top: 5%;
+}
+.error {
+  color: rgb(241, 92, 105);
+}
