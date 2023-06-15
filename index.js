@@ -28,12 +28,13 @@ function Conclusion(e) {
       };
 
     }).catch((error) => {
+      console.log("Упс, что-то не так:", error.message);
       document.querySelector(".result").innerHTML = `<p class="error">${error.message}</p>`; //выводим сообщение об ошибке
 
     }).finally(() => {
       console.log(activOption);
       console.log(activNamber);
-      option.value = "";
+      option.value = ""; //делаем поля пустыми
       namber.value = "";
     });
 

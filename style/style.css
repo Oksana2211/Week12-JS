@@ -29,5 +29,7 @@ font-size: 1.7rem;
   padding-top: 5%;
 }
 .error {
-  color: rgb(241, 92, 105);
+  padding-left: 5%;
+  padding-right: 5%;
+  color: rgb(197, 34, 48);
 }
